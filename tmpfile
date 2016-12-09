@@ -1,0 +1,167 @@
+  PID  PPID USER     COMMAND
+    1     0 root     /sbin/init splash
+    2     0 root     [kthreadd]
+    3     2 root     [ksoftirqd/0]
+    5     2 root     [kworker/0:0H]
+    7     2 root     [rcu_sched]
+    8     2 root     [rcu_bh]
+    9     2 root     [migration/0]
+   10     2 root     [watchdog/0]
+   11     2 root     [watchdog/1]
+   12     2 root     [migration/1]
+   13     2 root     [ksoftirqd/1]
+   15     2 root     [kworker/1:0H]
+   16     2 root     [kdevtmpfs]
+   17     2 root     [netns]
+   18     2 root     [perf]
+   19     2 root     [khungtaskd]
+   20     2 root     [writeback]
+   21     2 root     [ksmd]
+   22     2 root     [khugepaged]
+   23     2 root     [crypto]
+   24     2 root     [kintegrityd]
+   25     2 root     [bioset]
+   26     2 root     [kblockd]
+   27     2 root     [ata_sff]
+   28     2 root     [md]
+   29     2 root     [devfreq_wq]
+   34     2 root     [kswapd0]
+   35     2 root     [vmstat]
+   36     2 root     [fsnotify_mark]
+   37     2 root     [ecryptfs-kthrea]
+   53     2 root     [kthrotld]
+   54     2 root     [acpi_thermal_pm]
+   55     2 root     [bioset]
+   56     2 root     [bioset]
+   57     2 root     [bioset]
+   58     2 root     [bioset]
+   59     2 root     [bioset]
+   60     2 root     [bioset]
+   61     2 root     [bioset]
+   62     2 root     [bioset]
+   63     2 root     [bioset]
+   64     2 root     [bioset]
+   65     2 root     [bioset]
+   66     2 root     [bioset]
+   67     2 root     [bioset]
+   68     2 root     [bioset]
+   69     2 root     [bioset]
+   70     2 root     [bioset]
+   71     2 root     [bioset]
+   72     2 root     [bioset]
+   73     2 root     [bioset]
+   74     2 root     [bioset]
+   75     2 root     [bioset]
+   76     2 root     [bioset]
+   77     2 root     [bioset]
+   78     2 root     [bioset]
+   79     2 root     [scsi_eh_0]
+   80     2 root     [scsi_tmf_0]
+   81     2 root     [scsi_eh_1]
+   82     2 root     [scsi_tmf_1]
+   87     2 root     [ipv6_addrconf]
+  101     2 root     [deferwq]
+  102     2 root     [charger_manager]
+  103     2 root     [bioset]
+  147     2 root     [kpsmoused]
+  150     2 root     [kworker/1:1H]
+  151     2 root     [kworker/0:1H]
+  153     2 root     [scsi_eh_2]
+  154     2 root     [scsi_tmf_2]
+  155     2 root     [bioset]
+  179     2 root     [jbd2/sda1-8]
+  180     2 root     [ext4-rsv-conver]
+  212     1 root     /lib/systemd/systemd-journald
+  226     2 root     [kauditd]
+  259     1 root     /lib/systemd/systemd-udevd
+  334     2 root     [iprt-VBoxWQueue]
+  410     2 root     [ttm_swap]
+  559     1 root     /usr/lib/snapd/snapd
+  561     1 root     /usr/lib/accountsservice/accounts-daemon
+  568     1 root     /usr/sbin/ModemManager
+  572     1 message+ /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+  674     1 root     /usr/sbin/cron -f
+  679     1 syslog   /usr/sbin/rsyslogd -n
+  684     1 root     /lib/systemd/systemd-logind
+  691     1 root     /usr/sbin/acpid
+  699     1 avahi    avahi-daemon: running [webdev.local]
+  707     1 root     /usr/sbin/NetworkManager --no-daemon
+  777     1 root     /usr/lib/policykit-1/polkitd --no-debug
+  797     1 root     /usr/sbin/lightdm
+  800   699 avahi    avahi-daemon: chroot helper
+  811     1 root     /usr/sbin/irqbalance --pid=/var/run/irqbalance.pid
+  838   797 root     /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+  954   707 root     /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /var/run/dhclient-enp0s3.pid -lf /var/lib/NetworkManager/dhclient-ade7ca00-412b-444e-9c27-d634746c1d08-enp0s3.lease -cf /var/lib/NetworkManager/dhclient-enp0s3.conf enp0s3
+  965   707 nobody   /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/var/run/NetworkManager/dnsmasq.pid --listen-address=127.0.1.1 --cache-size=0 --conf-file=/dev/null --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d
+ 1012     1 root     /usr/sbin/VBoxService --pidfile /var/run/vboxadd-service.sh
+ 1197     1 root     /sbin/agetty --noclear tty1 linux
+ 1215     1 cntlm    /usr/sbin/cntlm -U cntlm -P /var/run/cntlm/cntlm.pid
+ 1229     1 root     /usr/sbin/apache2 -k start
+ 1336     1 rtkit    /usr/lib/rtkit/rtkit-daemon
+ 1352   797 root     lightdm --session-child 12 19
+ 1359     1 wdd      /lib/systemd/systemd --user
+ 1360  1359 wdd      (sd-pam)
+ 1366     1 wdd      /usr/bin/gnome-keyring-daemon --daemonize --login
+ 1368  1352 wdd      /sbin/upstart --user
+ 1382     1 wdd      /usr/bin/VBoxClient --clipboard
+ 1383  1382 wdd      /usr/bin/VBoxClient --clipboard
+ 1392     1 wdd      /usr/bin/VBoxClient --display
+ 1393  1392 wdd      /usr/bin/VBoxClient --display
+ 1399     1 wdd      /usr/bin/VBoxClient --seamless
+ 1400  1399 wdd      /usr/bin/VBoxClient --seamless
+ 1406     1 wdd      /usr/bin/VBoxClient --draganddrop
+ 1407  1406 wdd      /usr/bin/VBoxClient --draganddrop
+ 1490  1368 wdd      upstart-udev-bridge --daemon --user
+ 1491  1368 wdd      dbus-daemon --fork --session --address=unix:abstract=/tmp/dbus-sRln2c3HXX
+ 1512  1368 wdd      upstart-file-bridge --daemon --user
+ 1523  1368 wdd      upstart-dbus-bridge --daemon --system --user --bus-name system
+ 1528  1368 wdd      upstart-dbus-bridge --daemon --session --user --bus-name session
+ 1529  1368 wdd      gpg-agent --homedir /home/wdd/.gnupg --use-standard-socket --daemon
+ 1538  1368 wdd      /bin/sh /etc/xdg/xfce4/xinitrc -- /etc/X11/xinit/xserverrc
+ 1551  1538 wdd      xfce4-session
+ 1769  1368 wdd      /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
+ 1877  1368 wdd      xfwm4 --replace
+ 1881  1368 wdd      xfce4-panel
+ 1883  1368 wdd      Thunar --daemon
+ 1885  1368 wdd      xfdesktop
+ 1888  1368 wdd      xfsettingsd
+ 1916  1368 wdd      xfce4-volumed
+ 1922  1368 wdd      xfce4-power-manager
+ 1924  1368 wdd      /usr/bin/pulseaudio --start --log-target=syslog
+ 1929  1551 wdd      /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+ 1939  1551 wdd      nm-applet
+ 1943  1368 wdd      /usr/lib/at-spi2-core/at-spi-bus-launcher
+ 1948  1943 wdd      /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+ 1950  1368 wdd      /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+ 1955  1551 wdd      light-locker
+ 1962  1368 wdd      /usr/lib/dconf/dconf-service
+ 1964  1368 wdd      /usr/lib/gvfs/gvfsd
+ 1978     1 root     /usr/lib/upower/upowerd
+ 1992  1881 wdd      /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-1.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libwhiskermenu.so 1 20971558 whiskermenu Whisker Menu Show a menu to easily access installed applications
+ 1994  1881 wdd      /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-1.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libsystray.so 4 20971565 systray Notification Area Area where notification icons appear
+ 1995  1881 wdd      /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-1.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libxfce4powermanager.so 5 20971566 power-manager-plugin Power Manager Plugin Display the battery levels of your devices and control the brightness of your display
+ 1996  1881 wdd      /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libindicator-plugin.so 6 20971567 indicator Indicator Plugin Provides a panel area for Unity indicators. Indicators allow applications and system services to display their status and interact with the user.
+ 2008  1368 wdd      upstart --user --startup-event indicator-services-start
+ 2010  2008 wdd      /usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service
+ 2012  2008 wdd      /usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service
+ 2023  1368 wdd      /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+ 2026     1 root     /usr/lib/udisks2/udisksd --no-debug
+ 2039  1368 wdd      /usr/lib/gvfs/gvfsd-trash --spawner :1.23 /org/gtk/gvfs/exec_spaw/0
+ 2045  1368 wdd      /usr/lib/gvfs/gvfsd-metadata
+ 2054  1368 wdd      /usr/bin/xfce4-terminal
+ 2058  2054 wdd      gnome-pty-helper
+ 2163  1229 www-data /usr/sbin/apache2 -k start
+ 2164  1229 www-data /usr/sbin/apache2 -k start
+ 2249     1 root     /usr/sbin/cups-browsed
+ 2466     2 root     [kworker/1:1]
+ 2523     2 root     [kworker/0:1]
+ 2542     2 root     [kworker/1:2]
+ 2555     2 root     [kworker/u4:1]
+ 2715     2 root     [kworker/0:0]
+ 2722  2054 wdd      bash
+ 2798  2722 wdd      gedit locktest
+ 2821     2 root     [kworker/u4:2]
+ 2835  2054 wdd      bash
+ 2867  2054 wdd      bash
+ 2979     2 root     [kworker/u4:0]
+ 2988  2835 wdd      ps -eo pid,ppid,user,args

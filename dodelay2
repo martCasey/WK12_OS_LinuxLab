@@ -1,0 +1,29 @@
+#!/bin/bash
+
+if [ $# -ne 2 ]
+then
+	echo
+	echo
+	echo "useage: busy wait the cpu for X seconds"
+	echo "		using while loops"
+	echo
+	echo "		./dodelay num_of_seconds seconds_counter"
+	echo
+	echo
+	exit
+fi
+
+x=0
+echo start time is ...
+date
+while [ $x -lt $1 ]
+do
+	y=1
+	while [ $y -lt $2 ]
+	do
+		((y++))
+	done
+	((x++))
+done
+echo end time is ...
+date

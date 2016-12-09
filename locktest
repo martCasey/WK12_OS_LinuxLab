@@ -1,0 +1,40 @@
+#!/bin/bash
+
+#for full example see
+#https://tobrunet.ch/2013/01/easy-bash-script-locking-with-mkdir/
+
+LOCKFILE=/tmp/filelock
+
+if [ $# -ne 2 ]
+then
+	echo
+	echo "usage: locktest outputfile LOCK|NOLOCK"
+	echo
+	echo "note: lock file is $LOCKFILE"
+	exit
+fi
+
+if [ $2 == "LOCK" ]
+then
+	mkdir $LOCKFILE 2>/dev/null
+else
+	echo
+fi
+
+while [ $? -ne 0 ]
+do
+	echo waiting for lock
+	sleep 1
+	mkdir $LOCKFILE 2>/dev/null
+done
+
+count=0
+while [ $count -le 10 ]
+do
+	echo $count
+	echo $count >> $1
+	sleep 1
+	((count++))
+done
+
+rm -rf $LOCKFILE
